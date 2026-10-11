@@ -152,4 +152,42 @@ export const listas = [
       },
     ],
   },
+  {
+    pessoa: 'Luiz',
+    itens: [
+      {
+        nome: 'Artes e tapeçarias',
+        descricao: 'Artes ou tapeçarias legais.',
+        foto: 'tapecaria-sankofa.webp',
+      },
+      {
+        nome: 'Bandeira da América Latina invertida',
+        foto: 'bandeira-america-invertida.webp',
+      },
+      {
+        nome: 'Havaianinha bubu',
+        descricao: 'Havaianas de qualquer cor que seja massa.',
+        foto: 'havaianas.webp',
+      },
+      {
+        nome: 'Figa',
+        foto: 'figas.webp',
+      },
+      {
+        nome: 'Carranca',
+        foto: 'carrancas.webp',
+      },
+      {
+        nome: 'Camisa de artista',
+        foto: 'camisa-artista.webp',
+      },
+      {
+        nome: 'Acessórios de axé',
+        descricao: 'Búzios, acessórios de figa, Xangô, Oxum, Oxóssi.',
+        foto: 'benza-acessorios.webp',
+        onde: 'Ideia de loja: @benza.acessorios',
+        link: 'https://www.instagram.com/benza.acessorios/',
+      },
+    ],
+  },
 ]

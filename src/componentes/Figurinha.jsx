@@ -1,6 +1,7 @@
 // Um item da lista de presentes. Com foto vira adesivo recortado;
 // sem foto vira um adesivo de texto com a borda desenhada do botão.
 // Passar o mouse (ou tocar) mostra a etiqueta com a descrição.
+// É uma div focável (não um botão) para a etiqueta poder ter link clicável.
 export default function Figurinha({ item, indice }) {
   const giros = [-5, 4, -3, 6, -6, 3]
   const giro = giros[indice % giros.length]
@@ -10,8 +11,8 @@ export default function Figurinha({ item, indice }) {
   const tipo = temCores ? 'figurinha--cores' : temFoto ? 'figurinha--foto' : `figurinha--texto figurinha--${cor}`
 
   return (
-    <button
-      type="button"
+    <div
+      tabIndex={0}
       className={`figurinha ${tipo} ${item.pronta ? 'figurinha--pronta' : ''}`}
       style={{ '--giro': `${giro}deg` }}
       aria-describedby={`desc-${indice}`}
@@ -33,8 +34,14 @@ export default function Figurinha({ item, indice }) {
       <span className="etiqueta" id={`desc-${indice}`} role="tooltip">
         <span className="etiqueta__nome">{item.nome}</span>
         {item.descricao && <span className="etiqueta__desc">{item.descricao}</span>}
-        {item.onde && <span className="etiqueta__extra">{item.onde}</span>}
+        {item.onde && !item.link && <span className="etiqueta__extra">{item.onde}</span>}
+        {item.link && (
+          <a className="etiqueta__link" href={item.link} target="_blank" rel="noreferrer">
+            {item.onde || 'Ver na loja'} ↗
+          </a>
+        )}
       </span>
-    </button>
+    </div>
   )
 }
+
