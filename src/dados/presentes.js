@@ -190,4 +190,49 @@ export const listas = [
       },
     ],
   },
+  {
+    pessoa: 'Du',
+    gosto: 'as imagens são meramente ilustrativas',
+    itens: [
+      {
+        nome: 'Acessórios prata',
+        descricao: 'Ela deixou uma inspiração no Pinterest, dá uma olhada!',
+        foto: 'acessorios-prata-du.webp',
+        onde: 'Inspiração no Pinterest',
+        link: 'https://pin.it/7IdhRcANl',
+      },
+      {
+        nome: 'Canecas',
+        descricao: 'Gosta de canecas legais/divertidas ou que lembrem dela.',
+        foto: 'caneca-pitu.webp',
+      },
+      {
+        nome: 'Roupas sem estampa',
+        descricao: 'Em roupa, gosta de coisas sem estampa.',
+        foto: 'roupa-sem-estampa.webp',
+      },
+      {
+        nome: 'Perfume e cuidados',
+        descricao: 'Perfume/body splash, sabonete e hidratante doce mas não abusado e com "cheiro de limpo". Nada muito amadeirado.',
+        foto: 'perfumes-du.webp',
+      },
+      {
+        nome: 'Papete plataforma',
+        descricao: 'Ama tamanca papete plataforma meio comicamente grande, mas sem aplicação de tachinhas etc.',
+        foto: 'papete-plataforma.webp',
+      },
+      {
+        nome: 'Cores favoritas',
+        descricao: 'Tons escuros.',
+        cores: [
+          { nome: 'vinho', hex: '#5e1a2a' },
+          { nome: 'marrom', hex: '#4e3424' },
+          { nome: 'preto', hex: '#1e1a18' },
+          { nome: 'azul-marinho', hex: '#1d2a48' },
+          { nome: 'verde', hex: '#2c4430' },
+          { nome: 'cinza', hex: '#4a4a4c' },
+        ],
+      },
+    ],
+  },
 ]
