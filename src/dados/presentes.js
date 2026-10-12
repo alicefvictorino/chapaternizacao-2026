@@ -294,4 +294,29 @@ export const listas = [
       },
     ],
   },
+  {
+    pessoa: 'Chi',
+    itens: [
+      {
+        nome: 'Peças de cerâmica',
+        foto: 'ceramica.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Acessórios prata',
+        foto: 'pulseiras-prata.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Havaianas',
+        foto: 'havaianas-farm.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Biquíni',
+        foto: 'biquini.webp',
+        pronta: true,
+      },
+    ],
+  },
 ]
