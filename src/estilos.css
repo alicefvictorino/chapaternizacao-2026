@@ -271,14 +271,19 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 var(--espaco-6); }
 
 .mural__grade {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 72px var(--espaco-8);
   align-items: center;
-  justify-items: center;
 }
-.mural__celula { display: flex; justify-content: center; width: 100%; }
-.mural__celula:nth-child(3n + 2) { transform: translateY(40px); }
+/* grade uniforme de 3 colunas; uma fileira com menos itens fica centralizada */
+.mural__celula {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 calc((100% - 2 * var(--espaco-8)) / 3);
+}
+.mural__celula:hover, .mural__celula:focus-within { z-index: 20; }
 
 /* ---------- Figurinha ---------- */
 .figurinha {
@@ -441,9 +446,8 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 var(--espaco-6); }
   .topo__enfeite--5, .topo__enfeite--6, .topo__enfeite--7, .topo__enfeite--8 { display: none; }
   .mural { padding: var(--espaco-8) 0 72px; }
   .mural__pessoa { font-size: 52px; }
-  .mural__grade { grid-template-columns: repeat(2, 1fr); gap: 56px var(--espaco-4); }
-  .mural__celula:nth-child(3n + 2) { transform: none; }
-  .mural__celula:nth-child(even) { transform: translateY(32px); }
+  .mural__grade { gap: 56px var(--espaco-4); }
+  .mural__celula { flex-basis: calc((100% - var(--espaco-4)) / 2); }
   .mural__fundo .rabisco { width: 56px !important; }
   .figurinha__nome { font-size: 24px; }
   .figurinha--texto { padding: var(--espaco-3) var(--espaco-4); }

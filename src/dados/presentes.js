@@ -319,4 +319,44 @@ export const listas = [
       },
     ],
   },
+  {
+    pessoa: 'Hanna',
+    itens: [
+      {
+        nome: 'O avesso da pele',
+        descricao: 'O livro do Jeferson Tenório.',
+        foto: 'o-avesso-da-pele.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Decorações de casa',
+        descricao: 'Velas, quadrinhos, cerâmicas frias com coisas aesthetic, porta-retratos.',
+        foto: 'prato-decorativo.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Imagens religiosas',
+        descricao: 'Nossa Senhora das Graças, Santa Teresinha etc.',
+        foto: 'medalha-nsa-gracas.webp',
+      },
+      {
+        nome: 'Maquiagem',
+        descricao: 'Iluminador, paleta de sombras, blush com partículas de brilho.',
+        foto: 'maquiagem-hanna.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Coisinhas de casa',
+        descricao: 'Espátulas, louças, prensa de selar pacote, carimbo de apagar adesivo de entrega etc.',
+        foto: 'louca-coracao.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Coisas rosa',
+        descricao: 'Coisas rosa no geral.',
+        foto: 'coisas-rosa.webp',
+        pronta: true,
+      },
+    ],
+  },
 ]
