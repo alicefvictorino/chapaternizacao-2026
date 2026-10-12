@@ -256,7 +256,7 @@ export const listas = [
       },
       {
         nome: 'Chaveiros',
-        foto: 'chaveiro-pelucia.webp',
+        foto: 'chaveiro-troll.webp',
         ilustrativa: true,
       },
       {
