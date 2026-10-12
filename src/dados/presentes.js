@@ -396,6 +396,16 @@ export const listas = [
         nome: 'Planta falsa',
         foto: 'planta-falsa.webp',
       },
+      {
+        nome: 'Cores favoritas',
+        cores: [
+          { nome: 'verde escuro', hex: '#2f4a2c' },
+          { nome: 'azul', hex: '#2a4f86' },
+          { nome: 'laranja', hex: '#d9661f' },
+          { nome: 'amarelo', hex: '#d9a521', texto: '#2b1d14' },
+          { nome: 'rosa', hex: '#c2557a' },
+        ],
+      },
     ],
   },
 ]
