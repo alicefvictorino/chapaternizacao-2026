@@ -15,7 +15,7 @@ export const listas = [
       },
       {
         nome: 'Livros nacionais',
-        descricao: 'De autoras e autores brasileiros que você acha que ela vai gostar.',
+        descricao: 'De autoras e autores brasileiros que você acha que eu vou gostar.',
         foto: 'livros-nacionais.webp',
         pronta: true,
       },
@@ -57,7 +57,7 @@ export const listas = [
       },
       {
         nome: 'Cores favoritas',
-        descricao: 'Ela ama coisas amarelas e azuis!',
+        descricao: 'Amo coisas amarelas e azuis!',
         // 'texto' muda a cor do nome quando o fundo é claro
         cores: [
           { nome: 'amarelo', hex: '#f2c230', texto: '#2b1d14' },
@@ -66,13 +66,13 @@ export const listas = [
       },
       {
         nome: 'Tarots tradicionais',
-        descricao: 'Qualquer um, menos o de Marselha.',
+        descricao: 'Qualquer um, menos o de Marselha, que eu já tenho.',
         foto: 'tarot.webp',
         pronta: true,
       },
       {
         nome: 'Pipoca & Nanquim',
-        descricao: 'Ana ama essa editora. Ela já tem a Master Collection do Junji Ito e Tokyo Killers.',
+        descricao: 'Amo muito essa editora! Só tenho a Master Collection do Junji Ito e Tokyo Killers.',
         foto: 'cores-macabras.webp',
         pronta: true,
       },
@@ -102,12 +102,12 @@ export const listas = [
     itens: [
       {
         nome: 'Acessórios prata',
-        descricao: 'Acessórios prata, só não é muito fã de pedraria.',
+        descricao: 'Acessórios prata, só não sou muito fã de pedraria.',
         foto: 'colar-prata.webp',
       },
       {
         nome: 'Livros',
-        descricao: 'Tem olhado muito Oração para desaparecer, 78 graus de sabedoria e os mangás de Nana do 6 pra frente. Indicação também vale!',
+        descricao: 'Tenho olhado muito Oração para desaparecer, 78 graus de sabedoria e os mangás de Nana do 6 pra frente. Indicação também vale!',
         foto: 'livros-antigos.webp',
         pronta: true,
       },
@@ -134,8 +134,8 @@ export const listas = [
         pronta: true,
       },
       {
-        nome: 'Cacarecos que lembrem dela',
-        descricao: 'Qualquer cacareco que lembre ela.',
+        nome: 'Cacarecos que lembrem eu',
+        descricao: 'Qualquer cacareco que lembre de mim.',
         foto: 'chaveiro.webp',
         pronta: true,
       },
@@ -196,30 +196,30 @@ export const listas = [
     itens: [
       {
         nome: 'Acessórios prata',
-        descricao: 'Ela deixou uma inspiração no Pinterest, dá uma olhada!',
+        descricao: 'Deixei uma inspiração no Pinterest, dá uma olhada!',
         foto: 'acessorios-prata-du.webp',
         onde: 'Inspiração no Pinterest',
         link: 'https://pin.it/7IdhRcANl',
       },
       {
         nome: 'Canecas',
-        descricao: 'Gosta de canecas legais/divertidas ou que lembrem dela.',
+        descricao: 'Gosto de canecas legais/divertidas ou que vocês lembrem de mim.',
         foto: 'caneca-pitu.webp',
         ilustrativa: true,
       },
       {
         nome: 'Roupas sem estampa',
-        descricao: 'Em roupa, gosta de coisas sem estampa.',
+        descricao: 'Em roupa, gosto de coisas sem estampa.',
         foto: 'roupa-sem-estampa.webp',
       },
       {
         nome: 'Perfume e cuidados',
-        descricao: 'Perfume/body splash, sabonete e hidratante doce mas não abusado e com "cheiro de limpo". Nada muito amadeirado.',
+        descricao: 'Curto perfume/body splash, sabonete e hidratante doce mas não abusado e com "cheiro de limpo". Nada muito amadeirado.',
         foto: 'perfumes-du.webp',
       },
       {
         nome: 'Papete plataforma',
-        descricao: 'Ama tamanca papete plataforma meio comicamente grande, mas sem aplicação de tachinhas etc.',
+        descricao: 'Amo tamanca papete plataforma meio comicamente grande, mas sem aplicação de tachinhas etc.',
         foto: 'papete-plataforma.webp',
       },
       {
@@ -246,7 +246,7 @@ export const listas = [
       },
       {
         nome: 'Adesivos',
-        descricao: 'Figurinhas nas cores que ela gosta.',
+        descricao: 'Adesivos nas cores que eu gosto.',
         foto: 'adesivos.webp',
         pronta: true,
       },
@@ -266,7 +266,7 @@ export const listas = [
       },
       {
         nome: 'Esmalte',
-        descricao: 'Ela gosta do Top coat efeito gel da Colorama. Costuma usar mais esmaltes vermelhos, pretos e marrons.',
+        descricao: 'Gosto do top coat efeito gel da Colorama. Uso mais esmaltes vermelhos, pretos e marrons.',
         foto: 'esmaltes.webp',
         pronta: true,
       },
@@ -280,7 +280,7 @@ export const listas = [
       },
       {
         nome: 'Estampa listrada',
-        descricao: 'A estampa que ela gosta é listrado.',
+        descricao: 'A estampa que eu gosto é listrado.',
         foto: 'listrado.webp',
       },
       {
@@ -356,6 +356,45 @@ export const listas = [
         descricao: 'Coisas rosa no geral.',
         foto: 'coisas-rosa.webp',
         pronta: true,
+      },
+    ],
+  },
+  {
+    pessoa: 'Alice',
+    itens: [
+      {
+        nome: 'Chaveiro ou botton de AOT ou Jujutsu',
+        descricao: 'Personagens favoritos de AOT: Reiner, Jean, Hange, Erwin. De Jujutsu: Nanami, Choso, Megumi, Maki, Yuta.',
+        foto: 'chaveiro-aot.webp',
+      },
+      {
+        nome: 'Abajur',
+        descricao: 'Abajur de estilo cogumelo, com a luz mais quente do que luzes normais. Tem na shopee!',
+        foto: 'abajur-cogumelo.webp',
+      },
+      {
+        nome: 'Pijama',
+        descricao: 'Com short e blusa, gosto com manga curta ou de alcinha.',
+        foto: 'pijama.webp',
+      },
+      {
+        nome: 'Conjunto de colares bafonicos',
+        descricao: 'Prata ou dourado. Pode ser mais neutro ou com umas pedras mais hippies também. Vê o que parece comigo.',
+        foto: 'colares.webp',
+      },
+      {
+        nome: 'Cacarecos que lembrem eu',
+        descricao: 'Pode ser de anime, de cantor, esmalte, gloss baratinho, espelhinho, piranha, coisas simples e baratinhas. Só não xuxinha porque tenho umas 30!',
+        foto: 'espelhinho.webp',
+      },
+      {
+        nome: 'Maquiagem',
+        descricao: 'Iluminador, lápis de boca pra fazer lip combo, paleta de sombra de 4 cores em tons neutros.',
+        foto: 'maquiagem-alice.webp',
+      },
+      {
+        nome: 'Planta falsa',
+        foto: 'planta-falsa.webp',
       },
     ],
   },
