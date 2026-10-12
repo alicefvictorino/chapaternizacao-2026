@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import { listas } from '../dados/presentes.js'
+import { listas as listasOriginais } from '../dados/presentes.js'
 import { evento } from '../dados/evento.js'
 import Figurinha from './Figurinha.jsx'
 import Rabisco from './Rabisco.jsx'
+
+// Abas sempre em ordem alfabética, seja qual for a ordem no presentes.js
+const listas = [...listasOriginais].sort((a, b) => a.pessoa.localeCompare(b.pessoa, 'pt-BR'))
 
 // Rabiscos de fundo do mural: ficam nas margens, atrás das figurinhas.
 const enfeites = [
@@ -55,6 +58,7 @@ export default function ListaDePresentes() {
         <div className="mural__cabeca">
           <h3 className="mural__pessoa">{lista.pessoa}</h3>
           {lista.gosto && <p className="mural__gosto">{lista.gosto}</p>}
+          {lista.aviso && <p className="mural__aviso">{lista.aviso}</p>}
         </div>
 
         <div className="mural__grade">

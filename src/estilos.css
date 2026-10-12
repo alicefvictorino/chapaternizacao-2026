@@ -266,6 +266,7 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 var(--espaco-6); }
   margin: 0;
   transform: rotate(-3deg);
 }
+.mural__aviso { font-size: 14px; line-height: 20px; color: var(--tinta-suave); margin: var(--espaco-2) 0 0; }
 .mural__gosto { font-family: var(--font-mao); font-weight: 600; font-size: 26px; line-height: 1.2; color: var(--verde-700); margin: var(--espaco-2) 0 0; }
 
 .mural__grade {
@@ -357,6 +358,7 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 var(--espaco-6); }
 }
 .cartela__faixa {
   display: block;
+  box-shadow: inset 0 0 0 1.5px rgba(43, 29, 20, 0.18);
   padding: var(--espaco-3) var(--espaco-3);
   border-radius: var(--raio-sm);
   color: var(--creme-50);

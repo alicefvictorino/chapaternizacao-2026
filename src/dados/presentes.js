@@ -6,7 +6,6 @@
 export const listas = [
   {
     pessoa: 'Nala',
-    gosto: 'fotos ilustrativas!',
     itens: [
       {
         nome: 'Coisas artesanais',
@@ -35,6 +34,7 @@ export const listas = [
         nome: 'Canga de praia',
         descricao: 'Uma canga estampada pra levar pra praia.',
         foto: 'canga.webp',
+        ilustrativa: true,
         pronta: true,
       },
       {
@@ -154,6 +154,7 @@ export const listas = [
   },
   {
     pessoa: 'Luiz',
+    gosto: 'axé!',
     itens: [
       {
         nome: 'Artes e tapeçarias',
@@ -192,7 +193,6 @@ export const listas = [
   },
   {
     pessoa: 'Du',
-    gosto: 'as imagens são meramente ilustrativas',
     itens: [
       {
         nome: 'Acessórios prata',
@@ -205,6 +205,7 @@ export const listas = [
         nome: 'Canecas',
         descricao: 'Gosta de canecas legais/divertidas ou que lembrem dela.',
         foto: 'caneca-pitu.webp',
+        ilustrativa: true,
       },
       {
         nome: 'Roupas sem estampa',
@@ -231,6 +232,64 @@ export const listas = [
           { nome: 'azul-marinho', hex: '#1d2a48' },
           { nome: 'verde', hex: '#2c4430' },
           { nome: 'cinza', hex: '#4a4a4c' },
+        ],
+      },
+    ],
+  },
+  {
+    pessoa: 'Nanda',
+    gosto: 'aceito qualquer coisa que vc lembra de mim!',
+    itens: [
+      {
+        nome: 'Cadernos',
+        foto: 'caderno.webp',
+      },
+      {
+        nome: 'Adesivos',
+        descricao: 'Figurinhas nas cores que ela gosta.',
+        foto: 'adesivos.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Bottons',
+        foto: 'bottons.webp',
+      },
+      {
+        nome: 'Chaveiros',
+        foto: 'chaveiro-pelucia.webp',
+        ilustrativa: true,
+      },
+      {
+        nome: 'Maquiagem',
+        descricao: 'Rímel e lápis de desenhar sobrancelha.',
+        foto: 'maquiagem.webp',
+      },
+      {
+        nome: 'Esmalte',
+        descricao: 'Ela gosta do Top coat efeito gel da Colorama. Costuma usar mais esmaltes vermelhos, pretos e marrons.',
+        foto: 'esmaltes.webp',
+        pronta: true,
+      },
+      {
+        nome: 'Lenços',
+        foto: 'lenco-nanda.webp',
+      },
+      {
+        nome: 'Blusas básicas',
+        foto: 'blusas-basicas.webp',
+      },
+      {
+        nome: 'Estampa listrada',
+        descricao: 'A estampa que ela gosta é listrado.',
+        foto: 'listrado.webp',
+      },
+      {
+        nome: 'Cores favoritas',
+        cores: [
+          { nome: 'azul-marinho', hex: '#1d2a48' },
+          { nome: 'off white', hex: '#efe9dc', texto: '#2b1d14' },
+          { nome: 'marrom', hex: '#4e3424' },
+          { nome: 'vermelho', hex: '#8e1b1b' },
         ],
       },
     ],

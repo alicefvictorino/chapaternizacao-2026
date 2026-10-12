@@ -35,6 +35,7 @@ export default function Figurinha({ item, indice }) {
         <span className="etiqueta__nome">{item.nome}</span>
         {item.descricao && <span className="etiqueta__desc">{item.descricao}</span>}
         {item.onde && !item.link && <span className="etiqueta__extra">{item.onde}</span>}
+        {item.ilustrativa && <span className="etiqueta__extra">Imagem meramente ilustrativa</span>}
         {item.link && (
           <a className="etiqueta__link" href={item.link} target="_blank" rel="noreferrer">
             {item.onde || 'Ver na loja'} ↗
