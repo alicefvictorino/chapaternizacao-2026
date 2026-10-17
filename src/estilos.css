@@ -419,6 +419,8 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 var(--espaco-6); }
 .figurinha--foto:focus .etiqueta { transform: translate(-50%, 40px) rotate(1.5deg); }
 .etiqueta__nome { display: block; font-family: var(--font-mao); font-size: 28px; line-height: 1.1; font-weight: 700; color: var(--vermelho-700); margin-bottom: var(--espaco-1); }
 .etiqueta__desc { display: block; }
+.etiqueta__links { display: flex; flex-direction: column; align-items: flex-start; }
+.etiqueta__links .etiqueta__link { margin-top: var(--espaco-1); }
 .etiqueta__link {
   display: inline-block;
   margin-top: var(--espaco-2);

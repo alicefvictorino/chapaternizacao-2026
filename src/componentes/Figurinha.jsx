@@ -41,6 +41,15 @@ export default function Figurinha({ item, indice }) {
             {item.onde || 'Ver na loja'} ↗
           </a>
         )}
+        {item.links && (
+          <span className="etiqueta__links">
+            {item.links.map((l) => (
+              <a key={l.url} className="etiqueta__link" href={l.url} target="_blank" rel="noreferrer">
+                {l.texto} ↗
+              </a>
+            ))}
+          </span>
+        )}
       </span>
     </div>
   )

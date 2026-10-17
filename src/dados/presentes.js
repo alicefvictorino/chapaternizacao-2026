@@ -437,4 +437,35 @@ export const listas = [
       },
     ],
   },
+  {
+    pessoa: 'Flora',
+    itens: [
+      {
+        nome: 'Ita bag',
+        foto: 'flora-ita-bag.webp',
+      },
+      {
+        nome: 'Journal com bolsinha/pouch',
+        foto: 'flora-journal.webp',
+      },
+      {
+        nome: 'Livros',
+        descricao: 'Eu que nunca conheci os homens; Quando os pássaros voam para o sul; Desenhos ocultos; Katabasis; A guerra da papoula; Maternidade, de J. O. Aquino; e qualquer um da Carla Madeira (nunca li nenhum).',
+        foto: 'flora-livros.webp',
+      },
+      {
+        nome: 'Chaveiros',
+        foto: 'flora-chaveiro.webp',
+      },
+      {
+        nome: 'Lojas online',
+        descricao: 'Algumas ideias de lojas:',
+        links: [
+          { texto: '@aesquisito', url: 'https://www.instagram.com/aesquisito/' },
+          { texto: '@kworin_', url: 'https://www.instagram.com/kworin_/' },
+          { texto: '@agu.gus', url: 'https://www.instagram.com/agu.gus/' },
+        ],
+      },
+    ],
+  },
 ]
