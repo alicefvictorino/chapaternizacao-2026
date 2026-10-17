@@ -357,6 +357,35 @@ export const listas = [
         foto: 'coisas-rosa.webp',
         pronta: true,
       },
+      {
+        nome: 'Ímãs de geladeira',
+        descricao: 'Ímãs de cerâmica fria.',
+        foto: 'imas-ceramica.webp',
+      },
+      {
+        nome: 'Ímãs de smiley',
+        foto: 'imas-smiley.webp',
+      },
+      {
+        nome: 'Ímã de frase divertida',
+        foto: 'ima-frase.webp',
+      },
+      {
+        nome: 'Papete Birken',
+        descricao: 'Sandália papete com fivelas. Tem na shopee.',
+        foto: 'papete-birken.webp',
+      },
+      {
+        nome: 'Cores favoritas',
+        cores: [
+          { nome: 'rosa', hex: '#d97a9a', texto: '#2b1d14' },
+          { nome: 'lilás', hex: '#b9a3d6', texto: '#2b1d14' },
+          { nome: 'bordô', hex: '#6d1a2c' },
+          { nome: 'verde musgo', hex: '#5a6332' },
+          { nome: 'azul', hex: '#2f5fa8' },
+          { nome: 'marrom', hex: '#5a3a26' },
+        ],
+      },
     ],
   },
   {
