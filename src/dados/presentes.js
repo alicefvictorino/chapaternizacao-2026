@@ -466,6 +466,17 @@ export const listas = [
           { texto: '@agu.gus', url: 'https://www.instagram.com/agu.gus/' },
         ],
       },
+      {
+        nome: 'Cores favoritas',
+        cores: [
+          { nome: 'azul bebê', hex: '#a9d4f0', texto: '#2b1d14' },
+          { nome: 'lilás pastel', hex: '#cdb8e6', texto: '#2b1d14' },
+          { nome: 'vinho', hex: '#6b1a2a' },
+          { nome: 'azul frutiguero', hex: '#3fa9e0', texto: '#2b1d14' },
+          { nome: 'preto', hex: '#1e1a18' },
+          { nome: 'verde', hex: '#2f6b3a' },
+        ],
+      },
     ],
   },
 ]
