@@ -82,7 +82,9 @@ function Formulario({ estado, aoAtualizar }) {
       const d = await chamar({ acao: 'entrar', nome, chave })
       if (!d.ok) { setMsg({ tipo: 'erro', texto: d.erro }); return }
       setEntrou(true)
-      setEscolhidos(d.meuVoto || [])
+      // ignora sabores que saíram do cardápio depois do voto
+      const validos = new Set(d.estado.sabores.map((x) => x.nome))
+      setEscolhidos((d.meuVoto || []).filter((x) => validos.has(x)))
       aoAtualizar(d.estado)
       if (d.meuVoto?.length) setMsg({ tipo: 'ok', texto: 'Esse é o seu voto atual. Pode mudar se quiser!' })
     } catch {
