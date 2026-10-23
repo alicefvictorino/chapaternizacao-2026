@@ -22,4 +22,6 @@ export const evento = {
   // Links dos botões. Deixe '' para esconder o botão.
   linkConfirmar: '',
   linkInspiracao: '',
+
+  urlVotacao: 'https://script.google.com/macros/s/AKfycbwfvSB66x2-kDKuIWP2ZzRdTorH6ER3SWR2mtf6FYSNvHdWEcKVI3-Q5Xp0wBvnAhqOMA/exec',
 }

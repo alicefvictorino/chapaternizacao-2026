@@ -3,6 +3,7 @@ import Evento from './componentes/Evento.jsx'
 import Contribuicao from './componentes/Contribuicao.jsx'
 import AmigoSecreto from './componentes/AmigoSecreto.jsx'
 import ListaDePresentes from './componentes/ListaDePresentes.jsx'
+import Votacao from './componentes/Votacao.jsx'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <AmigoSecreto />
         </div>
         <ListaDePresentes />
+        <Votacao />
       </main>
       <footer className="rodape">
         <div className="xadrez" role="presentation" />

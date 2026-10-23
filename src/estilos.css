@@ -463,3 +463,61 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 var(--espaco-6); }
   .topo__palco { position: relative; min-height: 90vh; }
   .figurinha, .etiqueta, .botao { transition: none; }
 }
+
+/* ---------- Votação dos sabores ---------- */
+.votacao__intro { color: var(--tinta-suave); max-width: 640px; margin-bottom: var(--espaco-6); }
+.votacao__aviso { font-family: var(--font-mao); font-size: 26px; font-weight: 600; color: var(--verde-700); }
+.votacao__grade { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: var(--espaco-6); align-items: start; }
+.votacao__topo { display: flex; justify-content: space-between; align-items: baseline; gap: var(--espaco-3); }
+.votacao__entrar { max-width: 420px; }
+.campo { display: flex; flex-direction: column; gap: var(--espaco-1); margin-bottom: var(--espaco-4); }
+.campo select, .campo input {
+  font: inherit; font-size: 16px; padding: var(--espaco-3); border: 2px solid var(--creme-200);
+  border-radius: var(--raio-sm); background: var(--branco); color: var(--tinta);
+}
+.campo select:focus, .campo input:focus { outline: 3px solid var(--foco); outline-offset: 1px; border-color: var(--verde-700); }
+.botao:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+.votacao__contador {
+  font-family: var(--font-display); font-size: 28px; color: var(--vermelho-700);
+  background: var(--vermelho-100); padding: 2px var(--espaco-3); border-radius: var(--raio-sm);
+}
+.votacao__contador.is-completo { color: var(--creme-50); background: var(--verde-700); }
+.votacao__grupo { border: 0; padding: 0; margin: var(--espaco-4) 0; }
+.votacao__grupo legend { margin-bottom: var(--espaco-2); }
+.votacao__sabores { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: var(--espaco-2); }
+.sabor {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left;
+  padding: var(--espaco-2) var(--espaco-3); background: var(--branco); color: var(--tinta);
+  border: 2px solid var(--creme-200); border-radius: var(--raio-md); cursor: pointer; font: inherit;
+  transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
+}
+.sabor:hover:not(:disabled) { border-color: var(--vermelho-700); transform: rotate(-1deg); }
+.sabor.is-marcado { background: var(--vermelho-700); border-color: var(--vermelho-700); color: var(--creme-50); }
+.sabor:disabled { opacity: .45; cursor: not-allowed; }
+.sabor__nome { font-weight: 700; font-size: 15px; line-height: 20px; }
+.sabor__desc { font-size: 12px; line-height: 16px; opacity: .8; }
+.votacao__msg { font-size: 15px; font-weight: 600; margin: var(--espaco-3) 0; }
+.votacao__msg--erro { color: var(--vermelho-700); }
+.votacao__msg--ok { color: var(--verde-700); }
+.votacao__aovivo { font-size: 13px; font-weight: 700; color: var(--vermelho-700); animation: piscar 1.6s ease-in-out infinite; }
+@keyframes piscar { 50% { opacity: .35; } }
+.votacao__participacao { font-size: 14px; color: var(--tinta-suave); margin: 0 0 var(--espaco-3); }
+.votacao__vazio { font-family: var(--font-mao); font-size: 22px; font-weight: 600; color: var(--verde-700); }
+.ranking { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.ranking li { display: grid; grid-template-columns: 26px minmax(0, 1fr) 70px 26px; align-items: center; gap: var(--espaco-2); font-size: 15px; }
+.ranking__pos { font-family: var(--font-display); font-size: 20px; color: var(--tinta-suave); text-align: right; }
+.ranking li.is-top .ranking__pos { color: var(--vermelho-700); }
+.ranking li.is-top .ranking__nome { font-weight: 700; }
+.ranking__nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ranking__barra { height: 10px; background: var(--creme-200); border-radius: 999px; overflow: hidden; }
+.ranking__barra span { display: block; height: 100%; background: var(--verde-700); border-radius: 999px; transition: width 400ms ease; }
+.ranking li.is-top .ranking__barra span { background: var(--vermelho-700); }
+.ranking__votos { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+.votacao__faltam { font-size: 14px; color: var(--tinta-suave); margin-top: var(--espaco-4); }
+.votacao__faltam .rotulo { display: block; margin-bottom: 2px; }
+@media (max-width: 760px) {
+  .votacao__grade { grid-template-columns: 1fr; }
+  .votacao__sabores { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) { .votacao__aovivo { animation: none; } }
+.votacao .nota-titulo { font-family: var(--font-mao); font-weight: 700; font-size: 28px; line-height: 1.1; color: var(--verde-700); margin: 0 0 var(--espaco-3); }
