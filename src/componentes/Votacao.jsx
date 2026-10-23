@@ -44,7 +44,7 @@ export default function Votacao() {
     <section className="secao votacao" id="votacao" aria-labelledby="votacao-titulo">
       <h2 className="titulo-secao" id="votacao-titulo">Votação dos sabores</h2>
       <p className="votacao__intro">
-        Cada um escolhe {estado?.votosPorPessoa ?? 8} sabores pro rodízio. Use a chave secreta que a Alice mandou no seu WhatsApp.
+        Cada um escolhe {estado?.votosPorPessoa ?? 8} sabores pro rodízio. Use a chave que você recebeu no zap.
         {estado?.encerraEm && !estado.encerrado && <> A votação fecha em <strong>{formatarData(estado.encerraEm)}</strong>.</>}
       </p>
 
@@ -136,7 +136,7 @@ function Formulario({ estado, aoAtualizar }) {
           </label>
           <label className="campo">
             <span className="rotulo">Chave secreta</span>
-            <input type="password" value={chave} onChange={(e) => setChave(e.target.value)} autoComplete="off" required placeholder="ex.: calabresa-lua-1234" />
+            <input type="password" value={chave} onChange={(e) => setChave(e.target.value)} autoComplete="off" required placeholder="ex.: calabresa" />
           </label>
           {msg && <p className={`votacao__msg votacao__msg--${msg.tipo}`} role="status">{msg.texto}</p>}
           <button className="botao" type="submit" disabled={enviando}>{enviando ? 'Conferindo…' : 'Entrar'}</button>
