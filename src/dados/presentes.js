@@ -479,4 +479,63 @@ export const listas = [
       },
     ],
   },
+  {
+    pessoa: 'Yas',
+    gosto: 'gosto de coisas super básicas',
+    itens: [
+      {
+        nome: 'Coisas de cabelo',
+        descricao: 'Sempre são bem-vindas! Tô precisando muito de máscaras de tratamento.',
+        foto: 'yas-mascara-cabelo.webp',
+      },
+      {
+        nome: 'Roupas de academia',
+        descricao: 'Roupas de academia!!!',
+        foto: 'yas-academia.webp',
+      },
+      {
+        nome: 'Meias',
+        descricao: 'Meias!!!',
+        foto: 'yas-meias.webp',
+      },
+      {
+        nome: 'Bijus',
+        descricao: 'Pode ser prata ou dourado.',
+        foto: 'yas-colar.webp',
+      },
+      {
+        nome: 'Livros',
+        descricao: 'Tava querendo voltar a ler, mas não consigo pensar em nenhum livro. Gosto muito de Valter Hugo Mãe e de brasileiros mais melosos e reflexivos.',
+        foto: 'yas-livros.webp',
+      },
+    ],
+  },
+  {
+    pessoa: 'Breno',
+    itens: [
+      {
+        nome: 'Cinto',
+        foto: 'breno-cinto.webp',
+      },
+      {
+        nome: 'Suporte pra controle',
+        foto: 'breno-suporte.webp',
+      },
+      {
+        nome: 'Cacarecos do Astarion',
+        descricao: 'Qualquer cacareco do Astarion, personagem do jogo Baldur\'s Gate 3.',
+        foto: 'breno-astarion.webp',
+      },
+      {
+        nome: 'War',
+        descricao: 'Ou outros jogos de tabuleiro e baralhos diferentes.',
+        foto: 'breno-war.webp',
+      },
+      { nome: 'Penduricalho' },
+      {
+        nome: 'Colar ou corrente',
+        foto: 'breno-corrente.webp',
+      },
+    ],
+  },
 ]
